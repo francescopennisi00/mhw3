@@ -1,0 +1,266 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+#upper_header {
+    height: 300px;
+    position: relative;
+    margin-top: 70px;
+    background-color: red;
+}
+
+#spazio_nero {
+    height: 50%;
+    background-color: black;
+    width: 100%;
+}
+
+#upper_header img {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 1%;
+    left: 25%;
+}
+
+#main-section {
+    height: 600px;
+    background-image: url("esultanza.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2rem;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 20px;
+    font-size: 1em;
+    border: 3px solid darkgoldenrod;
+    font-style: italic;
+    z-index: 1;
+    position: absolute;
+}
+
+#links {
+    background-color: red;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#links a {
+    padding: 20px 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+#links a:hover {
+    background-color: black;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px;
+    margin: 30px 40px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    letter-spacing: 2px;
+}
+
+#main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colonna {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.colonna div {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    border: 3px solid black;
+    position: relative;
+}
+
+.colonna div img {
+    width: 100%;
+    height: 70%;
+}
+
+.colonna div p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    line-height: 150%;
+    padding: 0px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.colonna div p:hover {
+    background-color: rgba(245, 14, 14, 0.2);
+}
+
+.colonna div em {
+    position: absolute;
+    bottom: 4px;
+    right: 20px;
+    z-index: 1;
+    color: red;
+    font-size: 1.4rem;
+    font-family: 'Ramaraja', serif;
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-top: 60px;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgb(31, 31, 31);
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer img {
+    height: 70%;
+}
+
+#menu {
+    background-color: red;
+    height: 70px;
+    display: none;
+    width: 100vw;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+}
+
+@media (max-width: 500px) {
+
+    #main {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .colonna {
+        width: 70%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 20px 0px;
+        display: block;
+    }
+
+    header h1 {
+        padding: 0px;
+        margin: 100px 40px 0px 40px;
+        font-size: 0.8em;
+    }
+
+    footer {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    footer img {
+        height: 40%;
+        margin: 2px 0px;
+    }
+
+    #upper_header img {
+        width: 80%;
+        left: 10%;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+
+    .colonna div em {
+        position: absolute;
+        bottom: 1px;
+        right: 8px;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+#mhw3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.mhw3_column {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+#classifica header,
+#classifica div {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid gray;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+#classifica span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+#mhw3 h2 {
+    text-align: center;
+}
+
+#mhw3 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    padding: 20px;
+}
+
+#classifica div span img {
+    height: 30px;
+}
+
+/*stile della sezione che conterrà gli episodi*/
+#episode_view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#episode_view div {
+    display: flex;
+    flex-direction: column;
+    max-width: 31%;
+    position: relative;
+    border: 1px solid black;;
+    margin-bottom: 5px;
+    background-color: rgba(151, 5, 5, 0.2);
+}
+
+#episode_view div img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.ep_name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 30px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.data_rilascio {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-size: 0.8rem;
+}
+
+#modal_view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#modal_view.hidden {
+    display: none;
+}
+
+#modal_view img {
+    height: 50%;
+}
+
+#modal_view a {
+    color: green;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#modal_view p {
+    width: 50%;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.no_scroll {
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+
+    #mhw3 {
+        flex-direction: column;
+    }
+
+    .mhw3_column {
+        width: 100%;
+    }
+
+    #classifica header,
+    #classifica div {
+        justify-content:space-between;
+        margin: 0;
+    }
+
+    #classifica span {
+        font-size: 0.8rem;
+    }
+
+    #modal_view a {
+        font-size: 0.9rem;
+    }
+
+    #modal_view p {
+        font-size: 0.8rem;
+    }
+}
+
